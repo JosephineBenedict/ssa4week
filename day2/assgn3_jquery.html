@@ -1,0 +1,193 @@
+<!Doctype html>
+<html>
+<head>
+<title>using Elements</title>
+<script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+<style>
+.alert_class
+{
+  color:red;
+}
+</style>
+
+<body>
+<div>
+enter 'r','p','s' and hit enter
+</div>
+<input id="promptInput" type="text"></input>
+</body>
+<script>
+
+function sum() {
+    var sum = 0;
+    for (i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+} 
+
+console.log(sum.name);
+
+/*
+var foo = function () {
+   var sum = 0;
+   for (i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+} 
+
+console.log(foo.name);
+*/
+
+function foo1()
+{ 
+this.a=10;
+this.b=11;
+}
+
+
+foo1.prototype ={
+x:3,
+y:9};
+
+var f = new foo1()
+
+
+
+console .log(f.a);
+console.log(f.x);
+
+
+
+new XMLHttpRequest;
+
+
+/*
+function foo() {
+
+try{
+bar();
+}catch(ex){
+console.log('hi',ex);}
+}
+
+function bar() {
+
+throw 'you mesed up';
+//console.log('hi' / 'hgjgkj');
+}
+
+foo();
+
+function foo(){
+var x=9;
+	var  bar =function (){
+	x+=2;
+	console.log(x);
+	}
+	var ack =function (){
+	x+=3;
+	console.log(x);
+	} 
+bar();
+return [bar,ack];
+}
+
+
+var arr =foo();
+var a = arr[0];
+var b = arr[1];
+
+
+var a = foo();
+a();
+a();
+var b = foo();
+b();
+b();
+a();
+
+
+
+
+var x={'foo':3,bar:5};
+for(var i in x){
+console.log(x[i]);
+}
+
+for (var i in x)
+{
+console.log(i);
+}
+
+console.log(sum(7,3,5))//15
+console.log(sum(7,3,5,-20))//-5
+
+var s='HI';
+console.log(s.toLowerCase());
+console.log(s);
+
+
+function concatCaps()
+{
+var val ='';
+for(var i in arguments){
+val+=arguments[i];
+}
+return val.toUpperCase();
+}
+
+console.log(concatCaps('josephine','benedict','Maryland')); */
+
+/*
+var Animal ={
+sleep: function(){},
+eat:function(a,b){
+this}};
+
+var car =Object.create(Animal);
+
+Cat.meow={
+meow :function(){ console.log(this);
+}
+};
+Cat.eat = function(){}
+
+var mittens = Object.create(Cat);
+mittens.meow();
+mittens.age=7;
+mittens.name='Mittens';
+
+var fluffy = Object.create(Cat);
+fluffy.meow();
+fluffy.age = 5;
+fluffy.name='fluffy';
+*/
+
+/*function foo(a,b,c)
+{
+c = c||9;
+
+console.log(a,b,c);
+}
+foo();*/
+
+/*
+var x ={ken:7, Mary: 'hi'};
+var y = Object.create(x);
+var z= Object.create(y);
+console.log(y.ken);
+y.ken = 10;
+console.log(z.ken);
+*/
+/*
+var foo = jQuery('#foo');
+var div = document.createElement('div');
+div.innerHTML = msg;
+div.setAttribute('class','alert_class');
+document.body.appendChild(div);
+*/
+
+</script>
+</html>

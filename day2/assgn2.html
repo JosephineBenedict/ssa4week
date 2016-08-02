@@ -11,9 +11,9 @@
 </style>
 
 <body>
-<input type="text"></input>
+<input id="promptInput" type="text"></input>
 <div>
- Enter '
+enter 'r','p','s' and hit enter
 </div>
 </body>
 <script>
@@ -35,13 +35,14 @@ div.setAttribute('class','alert_class');
 document.body.appendChild(div);
 }
 
+/*
 var promptInput = document.getElementById('promptInput');
 
 promptInput.onkeydown= function(evt){
 if(evt.key === "Enter"){
 var human = promptInput.value;
 //functionname(human)
-}
+*/
 
 domPrompt("test dom prompt");
 domAlert("test");
