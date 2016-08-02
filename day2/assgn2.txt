@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+<title>using Elements</title>
+<body>
+<div>
+ 
+</div>
+</body>
+<script>
+function domPrompt(msg)
+{
+var myNewdiv = document.createElement('div');
+myNewdiv.innerHTML =msg;
+document.body.appendChild(myNewdiv);
+
+
+}
+domPrompt("test dom prompt");
+</script>
+</head>
+</html>

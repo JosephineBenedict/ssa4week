@@ -6,7 +6,7 @@ var play = prompt("Enter Rock,paper or Scissor");
 //display winner or tie
 
 var computer = Math.floor(Math.random() *3);
-alert(computer);
+//alert(computer);
 
 if (computer < 0) 
 {
@@ -16,6 +16,8 @@ if (computer < 0)
 } else {
     computer = "scissors";
 }
+
+//alert(computer);
 /*
 if (player === computer)
 {
@@ -33,6 +35,56 @@ else if(player === "paper")
 {
 	
 }*/
+
+
+
+if (play === computer)
+{
+	alert("tie");
+}
+
+
+if (play === "rock")
+{
+	if (computer === "paper")
+	{
+		alert("computer wins");
+	}
+	else if (computer ==="scissors")
+	{
+		alert("player wins");
+	}
+	
+}
+
+if (play ==="paper")
+{
+	if (computer === "rock")
+	{
+		alert ("paper wins");
+		}
+	else if (computer ==="scissors")
+	{
+		alert("computer wins");
+	}	
+
+}
+
+if (play ==="scissors")
+{
+	if (computer === "rock")
+	{
+		alert ("computer wins");
+		}
+	else if (computer ==="paper")
+	{
+		alert("player wins");
+	}	
+
+}
+
+
+/*
 var compare = function(choice1, choice2) 
 {
     if(choice1 === choice2) {
@@ -74,5 +126,5 @@ if(choice1 === "scissors")
 
 console.log("User Choice: " + play);
 console.log("Computer Choice: " + computer);
-console.log(compare(play, computer));
+console.log(compare(play, computer));*/
 

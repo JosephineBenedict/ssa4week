@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+<title>using Elements</title>
+
+<style>
+.alert_class
+{
+  color:red;
+}
+</style>
+
+<body>
+<input type="text"></input>
+<div>
+ Enter '
+</div>
+</body>
+<script>
+
+function domPrompt(msg)
+{
+var myNewdiv = document.createElement('div');
+myNewdiv.innerHTML =msg;
+document.body.appendChild(myNewdiv);
+}
+
+
+
+function domAlert(msg)
+{
+var div = document.createElement('div');
+div.innerHTML = msg;
+div.setAttribute('class','alert_class');
+document.body.appendChild(div);
+}
+
+var promptInput = document.getElementById('promptInput');
+
+promptInput.onkeydown= function(evt){
+if(evt.key === "Enter"){
+var human = promptInput.value;
+//functionname(human)
+}
+
+domPrompt("test dom prompt");
+domAlert("test");
+
+</script>
+</head>
+</html>
